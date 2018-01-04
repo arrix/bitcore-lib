@@ -1,6 +1,6 @@
 {
   "name": "bitcore-lib-cash",
-  "version": "0.16.1",
+  "version": "5.0.0-bch.1",
   "description": "A pure and powerful JavaScript Bitcoin Cash library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-lib/tree/cash"
+    "url": "https://github.com/arrix/bitcore-lib/tree/bch"
   },
   "browser": {
     "request": "browser-request"

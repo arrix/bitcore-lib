@@ -3,12 +3,13 @@
 var bitcore = module.exports;
 
 // module information
+bitcore.isBch = true;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
-  if (version !== undefined) {
-    var message = 'More than one instance of bitcore-lib-cash found. ' +
-      'Please make sure to require bitcore-lib and check that submodules do' +
-      ' not also include their own bitcore-lib dependency.';
+  if (version !== undefined && version !== bitcore.version) {
+    var message = 'More than one version of bitcore-lib-bch found. ' +
+      'Please make sure to require bitcore-lib-bch and check that submodules do' +
+      ' not also include their own bitcore-lib-bch dependency.';
     throw new Error(message);
   }
 };
